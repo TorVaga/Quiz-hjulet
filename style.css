@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.container {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* ENDRING: Gjør containeren større */
+    width: 90vw; /* Dekker 90% av skjermbredden */
+    max-width: 1200px; /* Setter en maksgrense for store skjermer */
+}
+
+/* Kategori-visning */
+.category-grid {
+    display: flex; /* Endret for å få knapper på én linje */
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.category-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    transition: all 0.2s;
+    font-weight: bold;
+    
+}
+
+.category-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+.category-btn:disabled {
+    background-color: #e0e0e0 !important;
+    color: #999;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Farger for knapper */
+#vennskap-btn { background-color: #28a745; } /* Grønn */
+#trafikken-btn { background-color: #dc3545; } /* Rosa/Rød */
+#internett-btn { background-color: #a0522d; } /* Brun */
+#naturen-btn { background-color: #17a2b8; } /* Lys Blå/Cyan */
+#hverdagen-btn { background-color: #40e0d0; } /* Turkis */
+
+/* Spørsmål-visning */
+#question-text {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    min-height: 100px;
+}
+
+.option {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    font-size: 1.2rem;
+}
+
+.option.correct {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+    font-weight: bold;
+}
+
+/* Timer */
+#timer-display {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #007bff;
+    margin: 2rem 0;
+}
+
+/* Knapper */
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#start-timer-btn { background-color: #28a745; }
+#stop-timer-btn { background-color: #fd7e14; } /* Ny knapp */
+#reveal-answer-btn { background-color: #ffc107; color: #333; }
+#back-to-categories-btn { background-color: #6c757d; }
+
+
+/* Hjelpeklasse for å skjule elementer */
+.hidden {
+    display: none;
+}
