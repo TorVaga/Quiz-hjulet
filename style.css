@@ -69,7 +69,12 @@ body {
     margin-bottom: 2rem;
     min-height: 100px;
 }
-
+.question-image {
+    max-width: 150px; /* Maks bredde for skiltet */
+    height: auto;
+    margin-top: -1rem; /* Trekker det litt opp mot spørsmålsteksten */
+    margin-bottom: 1rem;
+}
 .option {
     background-color: #f0f0f0;
     padding: 1rem;
@@ -119,4 +124,5 @@ button:hover {
 /* Hjelpeklasse for å skjule elementer */
 .hidden {
     display: none;
+
 }
